@@ -1,0 +1,13 @@
+[Unit]
+Description=Prometheus exporter for FLEXlm License Manager lmstat license information.
+Documentation=https://github.com/mjtrangoni/flexlm_exporter
+Requires=network-online.target
+After=network-online.target
+
+[Service]
+Restart=on-failure
+User=prometheus
+ExecStart=/usr/bin/prometheus-node-exporter --path.lmutil=lmutil  --path.config=/etc/flexlm_exporter/licenses.yml
+
+[Install]
+WantedBy=multi-user.target
