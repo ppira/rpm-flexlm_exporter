@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service>
+  <short>Flexlm Prometheus Exporter</short>
+  <description>Prometheus exporter for FLEXlm License Manager lmstat license information.</description>
+  <port protocol="tcp" port="9319"/>
+</service>
