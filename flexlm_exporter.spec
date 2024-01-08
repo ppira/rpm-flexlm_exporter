@@ -1,5 +1,5 @@
 Name:           flexlm_exporter
-Version:        0.0.9
+Version:        0.0.10
 Release:        1%{?dist}
 Summary:        Prometheus exporter for FLEXlm License Manager lmstat license information.
 
@@ -58,6 +58,9 @@ install -Dpm 644 %{SOURCE3} %{buildroot}%{_prefix}/lib/firewalld/services/%{name
 
 
 %changelog
+* Mon Jan 08 2024 Patrik Pira - 0.0.10-1
+- Upgrade to 0.0.10
+
 * Wed May 22 2021 Patrik Pira - 0.0.9-1
 - Build from git master
  
